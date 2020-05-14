@@ -28,6 +28,7 @@ body {
 
 .btn {
   color: black;
+  font-size: 0.9rem;
   font-family: inherit;
   text-transform: lowercase;
   text-decoration: none;
