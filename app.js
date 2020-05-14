@@ -18,10 +18,16 @@ function exec() {
     }
 
     if (nums != null) {
-      document.getElementById('solution').innerHTML = `${num} e' divisibile per `;
+      document.getElementById(
+        'solution'
+      ).innerHTML = `${num} è divisibile per `;
       for (let i = 0; i < nums.length; i++) {
         if (i == nums.length - 1) {
-          document.getElementById('solution').innerHTML += `e ${nums[i]} `;
+          if (nums.length == 1) {
+            document.getElementById('solution').innerHTML += `${nums[i]} `;
+          } else {
+            document.getElementById('solution').innerHTML += `e ${nums[i]} `;
+          }
         } else if (i == nums.length - 2) {
           document.getElementById('solution').innerHTML += `${nums[i]} `;
         } else {
